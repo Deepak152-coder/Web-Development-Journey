@@ -15,9 +15,16 @@ git add filename
 git commit -m "Initial commit"
 
 🔹 6. Connect with GitHub repo
-example - git remote add origin https://github.com/username/my-project.git
+example - git remote add origin https://github.com/Deepak152-coder/Web-Development-Journey.git
 
 🔹 7. Push your code
 git push -u origin main
 
-https://github.com/Deepak152-coder/Web-Development-Journey.git
+
+
+// After Linking it just do these steps 
+
+git add .
+git commit -m "Added empty folder NEW-FOLDER with .gitkeep"
+git push
+
