@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid Assignment</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 30px;
+        background: #111;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* OUTER CONTAINER */
+      .container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 20px;
+        border: 2px solid #fff;
+        border-radius: 15px;
+        background: #1a1a1a;
+      }
+
+      /* GRID */
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 180px 300px 80px;
+        gap: 20px;
+      }
+
+      /* COMMON BOX */
+      .box {
+        border: 2px solid #fff;
+        border-radius: 12px;
+        color: white;
+        padding: 20px;
+        font-size: 20px;
+      }
+
+      /* CAROUSEL */
+      .carousel {
+        grid-column: 1 / 4;
+        text-align: center;
+        font-size: 32px;
+      }
+
+      /* YOUTUBE CARDS */
+      .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-inline: 50px;
+        margin-bottom: 80px;
+      }
+
+      .card h3 {
+        margin: 0;
+        font-size: 26px;
+      }
+
+      .card p {
+        margin: 0;
+        font-size: 20px;
+      }
+
+      .card button {
+        align-self: flex-start;
+        padding: 8px 14px;
+        border-radius: 10px;
+        border: 1px solid #fff;
+        background: #2d4f7c;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+      }
+
+      /* FOOTER */
+      .footer {
+        grid-column: 1 / 4;
+        text-align: center;
+        font-size: 22px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="grid-container">
+        <div class="box carousel">Carousel</div>
+
+        <div class="box card" style="width: 50%; height: 20%">
+          <h3>
+            <iframe
+              width="100%"
+              height="250"
+              src="https://www.youtube.com/embed/xrj3zzaqODw"
+              allowfullscreen
+            >
+            </iframe>
+          </h3>
+        </div>
+
+        <div class="box card">
+          <h3>youtube</h3>
+          <p>card</p>
+          <button>watch now</button>
+        </div>
+
+        <div class="box card">
+          <h3>youtube</h3>
+          <p>card</p>
+          <button>watch now</button>
+        </div>
+
+        <div class="box footer">copyright - Yourname</div>
+      </div>
+    </div>
+  </body>
+</html>

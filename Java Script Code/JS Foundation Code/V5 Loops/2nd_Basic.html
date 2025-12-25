@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS Loops Practice</title>
+  </head>
+  <body>
+    <h2>Open Console (Press F12)</h2>
+
+    <script>
+      // 👉 PASTE YOUR JS CODE HERE (the code above)
+      // 1st challenge: Calculate the sum of numbers from 1 to 15 using a while loop.
+      let sum = 0;
+      let i = 1;
+      while (i <= 5) {
+        sum += i;
+        i++;
+      }
+      // console.log("Sum is : " + sum);
+
+      // 2nd challenge: Create a countdown from 5 to 1 and store the numbers in an array using a while loop.
+      let j = 5;
+      let arr = [];
+      while (j > 0) {
+        //   console.log("Countdown: " + j);
+        arr.push(j);
+        j--;
+      }
+
+      // console.log(arr);
+
+      // 3rd challenge: Prompt the user to enter types of tea until they type "stop", storing each type in an array using a do...while loop.
+      let teaCollection = [];
+      let tea;
+      do {
+        tea = prompt(
+          "Enter a type of tea to add to your collection (or type 'stop' to finish):"
+        );
+        if (tea !== "stop") {
+          teaCollection.push(tea);
+        }
+      } while (tea !== "stop");
+      console.log("Your tea collection: " + teaCollection);
+    </script>
+  </body>
+</html>

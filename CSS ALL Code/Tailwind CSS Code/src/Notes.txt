@@ -1,0 +1,19 @@
+npm init -y
+
+npm install -D tailwindcss
+
+npx tailwindcss init
+
+add this line { content: ["./src/**/*.{html,js}"], } in tailwind.config.js
+
+add this line {  "type": "module", } after main in pakage.jason
+
+make a file input.css in src then paste
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+this and save it.
+
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+
+<link href="./output.css" rel="stylesheet" />
